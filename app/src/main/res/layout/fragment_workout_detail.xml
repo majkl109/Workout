@@ -7,18 +7,15 @@
     android:orientation="vertical"
     tools:context=".WorkoutDetailFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/workout_title"
         android:id="@+id/textTitle"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/workout_description"
         android:id="@+id/textDescription" />
 
 </LinearLayout>
