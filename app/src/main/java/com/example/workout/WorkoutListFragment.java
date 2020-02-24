@@ -11,6 +11,11 @@ public class WorkoutListFragment extends ListFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedOnInstanceState){
+        String[] names = new String[Workout.workouts.length];
+        for(int i = 0; i < names.length; i++){
+            names[i] = Workout.workouts[i].getName();
+        }
+
         return super.onCreateView(inflater,container, savedInstanceState);
     }
 }
