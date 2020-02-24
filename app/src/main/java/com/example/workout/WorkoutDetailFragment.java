@@ -23,11 +23,12 @@ public class WorkoutDetailFragment extends Fragment {
     @Override
     public void onStart(){
         super.onStart();
+        View view = getView();
         if(view != null){
-            TextView title = (TextView) view.findViewById(R.id.textTitle);
+            TextView title = view.findViewById(R.id.textTitle);
             Workout workout = Workout.workouts[(int) workoutId];
             title.setText(workout.getName());
-            TextView description = (TextView) view.findViewById(R.id.textDescription);
+            TextView description = view.findViewById(R.id.textDescription);
             description.setText(workout.getDescription());
         }
     }
