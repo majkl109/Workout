@@ -7,6 +7,7 @@
 
     <fragment
         android:name="com.example.workout.WorkoutDetailFragment"
+        android:id="@+id/detail_frag"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 </LinearLayout>
