@@ -1,6 +1,8 @@
 package com.example.workout;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 
 public class DetailActivity extends AppCompatActivity {
@@ -13,7 +15,10 @@ public class DetailActivity extends AppCompatActivity {
         WorkoutDetailFragment frag = (WorkoutDetailFragment)getSupportFragmentManager().findFragmentById(R.id.detail_frag);
     //    int workoutId =(int)getIntent().getExtras().get(EXTRA_WORKOUT_ID);
         frag.setWorkout(1);
+    }
 
-
+    public void onShowDetails(View view){
+        Intent intent = new Intent(this, DetailActivity.class);
+        startActivity(intent);
     }
 }
