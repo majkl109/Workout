@@ -26,9 +26,10 @@ public class Workout {
         return name;
     }
 
-    public String getDescription() {
+    public String getDescription(){
         return description;
     }
+
     public String toString(){
         return this.name;
     }
