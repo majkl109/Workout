@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity implements WorkoutListFragme
     @Override
     public void itemClicked(long id) {
         View fragmentContainer = findViewById(R.id.fragment_container);
-        if (fragmentContainer != null)
+        if (fragmentContainer != null){
             WorkoutDetailFragment details = new WorkoutDetailFragment();
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         details.setWorkout(id);
