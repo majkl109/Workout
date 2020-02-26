@@ -40,6 +40,9 @@ public class WorkoutDetailFragment extends Fragment {
             description.setText(workout.getDescription());
         }
     }
+    public void onSaveInstanceState(Bundle savedInstanceState){
+        savedInstanceState.putLong("workoutId", workoutId);
+    }
 
     public void setWorkout(long id) {
         this.workoutId = id;
